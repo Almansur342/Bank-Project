@@ -14,24 +14,24 @@
   </header>
   <main class="w-3/4 mx-auto">
     <section>
-      <div class="grid grid-cols-3 gap-4">
-        <div class="bg-blue-300 p-14 rounded-md text-center text-whifont-bold">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div class="bg-blue-300 p-14 rounded-md text-center text-whifont-bold">
           <h3 class="text-3xl">Deposite</h3>
-          <h4 class="text-4xl">$00</h4>
+          <h4 class="text-4xl">$<span id="deposit-total">00</span></h4>
               </div>
         <div class="bg-green-300 p-14 rounded-md text-center text-white font-bold">
           <h3 class="text-3xl">Withdraw</h3>
-          <h4 class="text-4xl">$00</h4>
+          <h4 class="text-4xl">$<span id="withdraw-total">00</span></h4>
         </div>
         <div class="bg-yellow-400 p-14 rounded-md text-center text-whifont-bold">
           <h3 class="text-3xl">Balance</h3>
-          <h4 class="text-4xl">$1240</h4>
+          <h4 class="text-4xl">$<span id="balance-total">1240</span></h4>
         </div>
             </div>
     </section>
 
-    <section class="mt-8">
-      <div class="grid grid-cols-2 gap-4">
+    <section class="mt-8 mb-24">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div class="bg-red-100 rounded-md p-8">
             <h3 class="text-2xl"> please Deposite</h3>
             <div action="">
@@ -43,12 +43,12 @@
             <h3 class="text-2xl"> please Withdraw</h3>
             <div action="">
               <input  class="border block border-gray-400 rounded-md w-3/4 mb-4 px-3" type="email" name="" id="withdraw-input" placeholder="$ Amount You Want To Withdraw ">
-              <button id="withdraw-button" class="btn border-2 px-3 py-2 bg-yellow-600 text-white font-bold rounded-lg">Deposite</button>
+              <button id="withdraw-button" class="btn border-2 px-3 py-2 bg-yellow-600 text-white font-bold rounded-lg">Withdraw</button>
            </div>
           </div>
       </div>
     </section>
   </main>
+  <script src="js/bank.js"></script>
 </body>
-
 </html>
